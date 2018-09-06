@@ -1,0 +1,43 @@
+How to storage and contain the data - pick a data structure 
+
+Inputs:
+# of cities =  int
+	No -num
+
+Population of cities = int [ ]
+	Length is == to # of cities
+No -num
+	Each element can be a large number
+	Immutable
+
+City location = int [ ] 		
+Length is == to # of cities
+No -num
+Each element can be a large number
+
+# of cloud = int 
+	No -num
+	Could be a big number
+	Max is half max of cities
+No city in the same location
+
+Cloud location = int
+	Length is == to # of cloud
+	No -num or 0 value
+	Each element can be a large #
+	shared location 
+
+Cloud range = int
+	Length is == to # of cloud
+	No -num or 0 value
+	Each element can be a large #
+	r effects both direction (location + range, location - range)
+
+Output: 
+Max number of sunny people - removing 1 cloud = single integer
+
+Note : 
+Any city with no clouds don’t check - Add popul to const max people then splice
+Any cloud not over any city splice from array
+Any city covered by two clouds splice from array
+Any cloud covered by another cloud > first check for double cities then splice
